@@ -1,0 +1,62 @@
+@import 'defaults';
+
+header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    figure {
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: $nothingness;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin: 0;
+        height: max-content;
+
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: $nothingness;
+                color: $neutral-dark-blue;
+                margin: 1rem;
+
+                &:hover {
+                    color: $primary-red;
+                    cursor: $cursorPointer;
+                }
+            }
+
+
+            &:nth-child(4) a {
+                background-color: $primary-red;
+                color: white;
+                padding: 0.5rem 2rem;
+                border-radius: $border-radius;
+                border: 2px solid $primary-red;
+
+                &:hover {
+                    background-color: white;
+                    color: $primary-red;
+                    border: 2px solid $primary-red;
+                }
+            }
+
+            @media (max-width: $mobile-viewport) {
+                display: none;
+            }
+        }
+
+        li.hamburger {
+            display: none;
+
+            @media (max-width: $mobile-viewport) {
+                display: inline-block;
+            }
+        }
+    }
+}

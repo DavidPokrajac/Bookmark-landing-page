@@ -1,0 +1,147 @@
+@import "defaults";
+
+@mixin button {
+    font-family: inherit;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem 1rem;
+}
+
+@mixin special {
+    background-color: $primary-red;
+    color: white;
+}
+
+@mixin input {
+    font-family: inherit;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.3rem;
+    width: 50%;
+}
+
+aside {
+    background-color: $primary-blue;
+    text-align: center;
+    color: white;
+    padding: 4rem 0;
+
+    @media (max-width: $mobile-viewport) {
+        padding: 2.75rem 0;
+    }
+
+    div {
+        width: fit-content;
+        margin: 0 auto;
+
+        span {
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 0.3rem;
+        }
+
+        h2 {
+            font-weight: 500;
+            margin: 2.5rem 0;
+
+            @media (max-width: $mobile-viewport) {
+                font-size: 25px;
+                margin: 1.5rem 0.5rem;
+            }
+        }
+
+        .button {
+            @include button;
+            height: fit-content;
+
+            &:hover {
+                border: 2px solid $primary-red;
+                color: $primary-red;
+                background-color: white;
+                cursor: $cursorPointer;
+            }
+
+            @media (max-width: $mobile-viewport) {
+                display: block;
+                width: 90%;
+                margin: 0.75rem auto;
+            }
+        }
+
+        .special {
+            @include special;
+            border: 2px solid $primary-red;
+
+            &:hover {
+                cursor: $cursorPointer;
+                background-color: white;
+                color: $primary-red;
+            }
+        }
+
+        form {
+            display: flex;
+            justify-content: space-evenly;
+            
+            @media (max-width: $mobile-viewport) {
+                flex-direction: column;
+            }
+
+        label {
+            position: relative;
+            display: inline-block;
+            width: 60%;
+
+            img {
+                position: absolute;
+                right: 20px;
+                top: calc(100% - 60px);
+            }
+
+            em {
+                position: relative;
+                top: -5px;
+                left: 0;
+                width: fit-content;
+                display: inline-block;
+                background-color: $primary-red;
+                color: white;
+                font-style: italic;
+                font-size: 10px;
+                width: 100%;
+                border-radius: 0 0 0.3rem 0.3rem;
+                padding: 0.3rem 0.5rem;
+                text-align: left;
+
+                @media (max-width: $mobile-viewport) {
+                    width: 100%;
+                }
+            }
+
+            @media (max-width: $mobile-viewport) {
+               display: block;
+               width: 90%;
+               margin: 0.75rem auto;
+            }
+        }
+
+        .error {
+            border: 3px solid $primary-red;
+        }
+
+        input {
+            @include input;
+            width: 100%;
+
+            @media (max-width: $mobile-viewport) {
+                width: 100%;
+            }
+
+            &::placeholder {
+                color: #ccc;
+            }
+        }
+    }
+
+    }   
+}

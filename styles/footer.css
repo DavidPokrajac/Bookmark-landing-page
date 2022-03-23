@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+
+footer {
+  padding: 0 2rem;
+  background-color: #252b46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 375px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+footer nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 375px) {
+  footer nav ul {
+    text-align: center;
+  }
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+@media (max-width: 375px) {
+  footer nav ul li {
+    display: block;
+    padding: 0.5rem 0;
+  }
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+footer nav ul li a:hover {
+  color: #fa5757;
+}
+
+@media (max-width: 375px) {
+  footer .social-icons {
+    padding: 1rem 0 2rem 0;
+  }
+}
+
+footer .social-icons a {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+footer .social-icons a img:hover {
+  -webkit-filter: invert(48%) sepia(34%) saturate(1111%) hue-rotate(314deg) brightness(99%) contrast(98%);
+          filter: invert(48%) sepia(34%) saturate(1111%) hue-rotate(314deg) brightness(99%) contrast(98%);
+}
+/*# sourceMappingURL=footer.css.map */

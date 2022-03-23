@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+
+aside {
+  background-color: #5368df;
+  text-align: center;
+  color: white;
+  padding: 4rem 0;
+}
+
+@media (max-width: 375px) {
+  aside {
+    padding: 2.75rem 0;
+  }
+}
+
+aside div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+aside div span {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.3rem;
+}
+
+aside div h2 {
+  font-weight: 500;
+  margin: 2.5rem 0;
+}
+
+@media (max-width: 375px) {
+  aside div h2 {
+    font-size: 25px;
+    margin: 1.5rem 0.5rem;
+  }
+}
+
+aside div .button {
+  font-family: inherit;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.75rem 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+aside div .button:hover {
+  border: 2px solid #fa5757;
+  color: #fa5757;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  aside div .button {
+    display: block;
+    width: 90%;
+    margin: 0.75rem auto;
+  }
+}
+
+aside div .special {
+  background-color: #fa5757;
+  color: white;
+  border: 2px solid #fa5757;
+}
+
+aside div .special:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #fa5757;
+}
+
+aside div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 375px) {
+  aside div form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+aside div form label {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+}
+
+aside div form label img {
+  position: absolute;
+  right: 20px;
+  top: calc(100% - 60px);
+}
+
+aside div form label em {
+  position: relative;
+  top: -5px;
+  left: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  background-color: #fa5757;
+  color: white;
+  font-style: italic;
+  font-size: 10px;
+  width: 100%;
+  border-radius: 0 0 0.3rem 0.3rem;
+  padding: 0.3rem 0.5rem;
+  text-align: left;
+}
+
+@media (max-width: 375px) {
+  aside div form label em {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  aside div form label {
+    display: block;
+    width: 90%;
+    margin: 0.75rem auto;
+  }
+}
+
+aside div form .error {
+  border: 3px solid #fa5757;
+}
+
+aside div form input {
+  font-family: inherit;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.3rem;
+  width: 50%;
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  aside div form input {
+    width: 100%;
+  }
+}
+
+aside div form input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+aside div form input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+aside div form input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+aside div form input::placeholder {
+  color: #ccc;
+}
+/*# sourceMappingURL=aside.css.map */
